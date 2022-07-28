@@ -390,7 +390,6 @@ export default {
           forEach(block.outputs, output => {
             if (output.links) {
               const index = findIndex(blockItems, item => item.order === output.links[0])
-              console.log(index)
               if (index !== -1) {
                 blockItems[index].properties.level = (block.properties.level || 0) + 1
               }
